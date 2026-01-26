@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <link rel="preload" as="image" href="https://res.cloudinary.com/dqetipg73/image/upload/v1768664846/FossaPay_Logo_3_zna43c.jpg" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        :root { --font-inter-tight: "Inter Tight", Inter, Arial, sans-serif; }
+        body { font-family: var(--font-inter-tight); }
+        a { color: #007ee6; }
+        .receipt-table { width: 100%; border-collapse: collapse; margin-top: 16px; }
+        .receipt-table th, .receipt-table td { padding: 8px 12px; border: 1px solid #e0e0e0; text-align: left; }
+        .receipt-table th { background: #f6f9fc; }
+        .btn { background-color: #007ee6; color: #fff; padding: 12px 28px; border-radius: 4px; text-decoration: none; display: inline-block; }
+    </style>
+</head>
+<body style="background-color:rgb(246,249,252);margin:0;padding:0;">
+    <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="background-color:#f6f9fc;">
+        <tr>
+            <td align="center">
+                <table border="0" width="600" cellpadding="0" cellspacing="0" style="background-color:#fff;border:1px solid #e0e0e0;">
+                    <tr>
+                        <td align="center" style="padding:36px 0 16px 0;">
+                            <img src="https://res.cloudinary.com/dqetipg73/image/upload/v1768664846/FossaPay_Logo_3_zna43c.jpg" alt="FossaPay" width="180" style="display:block;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding:0 40px 20px 40px;">
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="font-size:18px;color:rgb(64,64,64);padding-bottom:8px;">Hi {{sender_name}},</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size:20px;color:rgb(64,64,64);font-weight:700;padding-bottom:12px;">Your payment was successful! 🎉</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size:16px;color:rgb(64,64,64);padding-bottom:12px;">
+                                        Thank you for your payment to <strong>{{merchant_name}}</strong>.
+                                        Below is your payment receipt for your records.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table class="receipt-table">
+                                            <tr>
+                                                <th>Reference</th>
+                                                <td>{{payment_reference}}</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Amount</th>
+                                                <td>{{amount}}</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Date</th>
+                                                <td>{{date}}</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Merchant</th>
+                                                <td>{{merchant_name}}</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Status</th>
+                                                <td>{{status}}</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size:15px;color:rgb(64,64,64);padding-top:18px;">
+                                        If you have any questions or did not authorize this payment, please contact our support team immediately.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size:16px;color:rgb(64,64,64);padding-top:18px;">Best regards,<br />FossaPay Team</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:#EBF5FF;padding:24px 40px;">
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="font-size:15px;color:rgb(64,64,64);padding-bottom:8px;font-weight:bold;">Need help?</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size:15px;color:rgb(64,64,64);">Email: <a href="mailto:product@fossapay.com" style="color:#007ee6;text-decoration:underline;">product@fossapay.com</a></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-top:18px;">
+                                        <table cellpadding="0" cellspacing="0" border="0" align="center">
+                                            <tr>
+                                                <td style="padding-right:12px;font-size:15px;color:rgb(64,64,64);">
+                                                    <a href="https://x.com/fossapay" style="color:#007ee6;text-decoration:underline;"><img src="https://res.cloudinary.com/dqetipg73/image/upload/v1768666954/x_dl6whg.png" width="20" height="20" alt="X" style="vertical-align:middle;margin-right:8px;border:0;display:inline-block;" />Twitter</a>
+                                                </td>
+                                                <td style="padding-right:12px;font-size:15px;color:rgb(64,64,64);">
+                                                    <a href="https://www.linkedin.com/company/fossapay/" style="color:#007ee6;text-decoration:underline;"><img src="https://res.cloudinary.com/dqetipg73/image/upload/v1768666954/6WtDIesg_400x400_mxkrbs.png" width="20" height="20" alt="LinkedIn" style="vertical-align:middle;margin-right:8px;border:0;display:inline-block;" />LinkedIn</a>
+                                                </td>
+                                                <td style="padding-right:16px;font-size:15px;color:rgb(64,64,64);">
+                                                    <a href="https://www.facebook.com/profile.php?id=61580093919161" style="color:#007ee6;text-decoration:underline;"><img src="https://res.cloudinary.com/dqetipg73/image/upload/v1768666954/images_2_fkyhdm.png" width="20" height="20" alt="Facebook" style="vertical-align:middle;margin-right:8px;border:0;display:inline-block;" />Facebook</a>
+                                                </td>
+                                                <td style="font-size:15px;color:rgb(64,64,64);">
+                                                    <a href="https://www.instagram.com/fossapay/" style="color:#007ee6;text-decoration:underline;"><img src="https://res.cloudinary.com/dqetipg73/image/upload/v1768666954/instagram_lclbdm.svg" width="20" height="20" alt="Instagram" style="vertical-align:middle;margin-right:8px;border:0;display:inline-block;" />Instagram</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
